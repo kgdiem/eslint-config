@@ -13,17 +13,7 @@ module.exports = {
   env: {
     node: true,
   },
-  rules: {
-    "prettier/arrow-parens": "avoid",
-    "prettier/bracket-same-line": true,
-    "prettier/bracket-spacing": true,
-    "prettier/print-width": ["error", { code: 120 }],
-    "prettier/semi": true,
-    "prettier/single-quote": true,
-    "prettier/tab-width": 2,
-    "prettier/trailing-comma": "es5",
-    "prettier/use-tabs": false,
-  },
+  rules: {},
   overrides: [
     {
       files: ["*.ts"],
@@ -57,10 +47,7 @@ module.exports = {
     {
       files: ["*.html"],
       extends: ["plugin:@angular-eslint/template/recommended"],
-      rules: {
-        "prettier/single-quote": false,
-        "prettier/html-whitespace-sensitivity": "ignore",
-      },
+      rules: {},
     },
     {
       files: ["**/*.yml"],
